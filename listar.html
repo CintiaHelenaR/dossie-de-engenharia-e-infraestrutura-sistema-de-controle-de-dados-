@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos Cadastrados</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <header>
+        <h1>Produtos Cadastrados</h1>
+        <p>Confira os produtos disponíveis no estoque.</p>
+    </header>
+
+    <main class="container-lista">
+
+        <a href="index.html" class="voltar">← Voltar ao início</a>
+
+        <section class="cabecalho-lista">
+            <h2>Lista de Produtos</h2>
+            <p>Confira e gerencie todos os produtos cadastrados no estoque.</p>
+        </section>
+
+        <section class="resumo-lista">
+
+            <div class="card card-produtos">
+                <h3>Total de produtos</h3>
+                <p id="totalProdutos">0</p>
+            </div>
+
+            <div class="card card-categorias">
+                <h3>Produtos no estoque</h3>
+                <p id="totalUnidades">0</p>
+            </div>
+
+        </section>
+
+        <a href="cadastro.html" class="botao-lista">
+            + Cadastrar novo produto
+        </a>
+
+        <section class="card-tabela">
+
+            <div class="titulo-tabela">
+                <h3>Produtos cadastrados</h3>
+                <p>Todos os itens registrados no sistema.</p>
+            </div>
+
+            <div class="tabela-responsiva">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Categoria</th>
+                            <th>Quantidade</th>
+                            <th>Preço</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="listaProdutos">
+                        <!-- Os produtos serão adicionados pelo JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Projeto desenvolvido por Cintia, Iago, Maria Eduarda Cruz e Sara.</p>
+    </footer>
+
+    <script src="listar.js"></script>
+
+</body>
+</html>
